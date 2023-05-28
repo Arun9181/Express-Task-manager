@@ -1,0 +1,9 @@
+<div class="container">
+    <form action="/task-manager/task/{{task._id}}?_method=PUT" id="form" method="post" >
+        <h1>Update Task</h1>
+        <input type="hidden" name="_method" value="PUT">
+        <label for="task">Task</label>
+        <input type="text" name="task" id="task" value="{{task.task}}">
+        <button type="submit">Update Task</button>
+    </form>
+</div>
